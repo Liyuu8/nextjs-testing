@@ -30,7 +30,7 @@ const Layout: React.FC<TITLE> = ({ children, title = 'Nextjs' }) => {
           <div className="flex items-center pl-8 h-14">
             <div className="flex space-x-4">
               {navItems.map((navItem) => (
-                <Link href={navItem.href}>
+                <Link href={navItem.href} key={navItem.id}>
                   <a
                     data-testid={navItem.id + '-nav'}
                     className="text-gray-300 hover:text-gray-700 px-3 py-2 rounded"
