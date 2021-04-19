@@ -8,7 +8,7 @@ initTestHelpers();
 
 describe('Navigation by Link', () => {
   it('Should route to selected page in navbar', async () => {
-    const { page } = await getPage({ route: '/index' });
+    const { page } = await getPage({ route: '/' });
     render(page);
 
     userEvent.click(screen.getByTestId('blog-nav'));
