@@ -23,7 +23,7 @@ const TaskPage: React.FC<STATIC_PROPS> = ({ staticTasks }) => {
   });
 
   return error ? (
-    <span>Error!</span>
+    <span>Eror!</span>
   ) : (
     <Layout title="Todos">
       <p className="text-4xl mb-10">todos page</p>
